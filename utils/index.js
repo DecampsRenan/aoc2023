@@ -9,5 +9,6 @@ export function showResult(result) {
 }
 
 export function createArray(length) {
+  if (length <= 0) return []
   return Array.from(Array(length)).map((_, i) => i)
 }

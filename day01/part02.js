@@ -1,5 +1,3 @@
-import { reverse } from "dns"
-
 const file = Bun.file('./data.txt')
 const text = await file.text()
 const lines = text.split('\n')

@@ -69,8 +69,8 @@ class Hand {
       return 'One pair'
     }
 
-    Levels['One pair'].push(this)
-    return 'One pair'
+    Levels['High card'].push(this)
+    return 'High card'
   }
 
   getCardCounts() {
@@ -136,7 +136,4 @@ sortedCards.forEach(c => console.log(c.toString()))
 
 const result = sortedCards.filter(Boolean).reduce((sum, hand, i) => sum + (hand.bid * (i+1)), 0)
 
-const expected = 156740678
-
-showResult(result > expected)
 showResult(result)
